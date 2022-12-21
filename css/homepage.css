@@ -140,7 +140,7 @@ body {
 nav.navbar {
   background: url("../images/navbar_bg.png");
   background-size: cover;
-  background-position: center center;
+  background-position: left center;
   min-height: 100px;
 }
 nav.navbar .mcard_ecormerce i:hover {
@@ -148,6 +148,9 @@ nav.navbar .mcard_ecormerce i:hover {
   transition: all 0.3s;
 }
 /* intro section */
+.intro_mcard {
+  background-color: #f2f2f2;
+}
 .intro_left_img img,
 .intro_right_img img {
   width: 100%;
@@ -155,18 +158,35 @@ nav.navbar .mcard_ecormerce i:hover {
 /* QR-touch section */
 .touch_QR {
   background: url("../images/info_conect_bg.png");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  min-height: 400px;
+  min-height: 250px;
   width: 100%;
 }
-.touch_QR .phone_bottom_right{
+/* .touch_QR .phone_bottom_right{
   position: relative;
   right: 0;
-}
+} */
 .touch_left_img img {
   width: 100%;
 }
 .touch_right_img img {
   width: 100%;
+}
+/* Circle Contact */
+.circle_contact {
+  background-color: #f2f2f2;
+  background: url("../images/circle_contact_bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 400px;
+}
+.circle_contact .image-override {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+.circle_contact .image-override img {
+  position: absolute;
 }
