@@ -6,6 +6,7 @@
 body {
   scroll-behavior: smooth;
   font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
 }
 #btn-back-to-top {
   position: fixed;
@@ -15,12 +16,21 @@ body {
   display: none;
 }
 .bg-blue-homepage {
-  color: #00579c;
+  background-color: #00579c;
 }
 .bg-blue-light-homepage {
-  color: #077ad1;
+  background-color: #077ad1;
 }
 .bg-blue-dark-homepage {
+  background-color: #002843;
+}
+.text-blue-homepage {
+  color: #00579c;
+}
+.text-blue-light-homepage {
+  color: #077ad1;
+}
+.text-blue-dark-homepage {
   color: #002843;
 }
 /* menu circle animate */
@@ -125,4 +135,38 @@ body {
   margin-left: -40px;
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
   font-size: 14px;
+}
+/* header - navbar*/
+nav.navbar {
+  background: url("../images/navbar_bg.png");
+  background-size: cover;
+  background-position: center center;
+  min-height: 100px;
+}
+nav.navbar .mcard_ecormerce i:hover {
+  color: #fff !important;
+  transition: all 0.3s;
+}
+/* intro section */
+.intro_left_img img,
+.intro_right_img img {
+  width: 100%;
+}
+/* QR-touch section */
+.touch_QR {
+  background: url("../images/info_conect_bg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 400px;
+  width: 100%;
+}
+.touch_QR .phone_bottom_right{
+  position: relative;
+  right: 0;
+}
+.touch_left_img img {
+  width: 100%;
+}
+.touch_right_img img {
+  width: 100%;
 }

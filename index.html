@@ -23,37 +23,71 @@
 </head>
 
 <body>
-    <header style="height: 1000px;">
+    <header class="header bg-blue-dark-homepage">
         <div class="container">
-            <h1 class="text-center animate__animated animate__fadeInDown animate__delay-1s">
+            <!-- <h1 class="text-center animate__animated animate__fadeInDown animate__delay-1s">
                 THIS IS HEADER
-            </h1>
-            <h1 class="text-center animate__animated animate__fadeInDown animate__delay-2s">
-                THIS IS HEADER 2
-            </h1>
-            <h1 class="text-center animate__animated animate__fadeInDown animate__delay-3s">
-                THIS IS HEADER 3
-            </h1>
-            <h1 class="text-center animate__animated animate__fadeInDown animate__delay-4s">
-                THIS IS HEADER 4
-            </h1>
+            </h1> -->
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" aria-current="page" href="#">
+                        <img src="./images/logo_mcard_white.png" alt="logo-white" width="150">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbar_mcard_header" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-between" id="navbar_mcard_header">
+                        <div class="navbar-nav">
+                            <a class="nav-link" href="#">Bảng giá</a>
+                            <a class="nav-link" href="#">Hỗ trợ</a>
+                            <a class="nav-link" href="#">Liên hệ</a>
+                        </div>
+                        <a class="nav-link mcard_ecormerce py-2" href="#">
+                            <i class="fa-solid fa-cart-shopping text-white-50 fs-5"></i>
+                        </a>
+                    </div>
+                </div>
+            </nav>
         </div>
     </header>
-    <main style="height: 1000px;">
+    <main class="main">
+        <section class="intro_mcard">
+            <div class="container">
+                <div class="title_intro text-center py-5">
+                    <h1 class="text-blue-homepage">THÔNG TIN CÁ NHÂN THỜI ĐẠI SỐ</h1>
+                    <span class="text-blue-light-homepage fs-3">www.mcards.vn</span>
+                </div>
+                <div class="row mx-auto justify-content-center">
+                    <div class="intro_left_img col-md-6 col-6">
+                        <img src="./images/intro_left.png" alt="intro_left">
+                    </div>
+                    <div class="intro_right_img col-md-6 col-6">
+                        <img src="./images/intro_right.png" alt="intro_right">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="touch_QR">
+            <div class="container">
+                <div class="row mx-auto justify-content-center align-item-center py-5">
+                    <div class="touch_left col-md-6 col-6">
+                        <img src="./images/QR_touch_left.png" alt="intro_left">
+                    </div>
+                    <div class="touch_right col-md-6 col-6">
+                        <!-- <span class="text-white text-center ms-4">Lưu thông tin đơn giản chỉ với</span>
+                        <h4 class="text-white text-left">1 lần chạm mã QR CODE</h4> -->
+                        <img class="phone_bottom_right" src="./images/QR_touch_right.png" alt="intro_left">
+                    </div>
+                </div>
+            </div>
+        </section>
         <div class="container">
-            <h1 class="text-center wow animate__animated animate__fadeInUp animate__delay-1s">
+            <!-- <h1 class="text-center wow animate__animated animate__fadeInUp animate__delay-1s">
                 THIS IS MAIN
-            </h1>
-            <h1 class="text-center  wow animate__animated animate__fadeInUp animate__delay-2s">
-                THIS IS MAIN 2
-            </h1>
-            <h1 class="text-center  wow animate__animated animate__fadeInUp animate__delay-3s">
-                THIS IS MAIN 3
-            </h1>
-            <h1 class="text-center  wow animate__animated animate__fadeInUp animate__delay-4s">
-                THIS IS MAIN 4
-            </h1>
-            <div class="menuCircleContact">
+            </h1> -->
+            <!-- <div class="menuCircleContact">
                 <button>Click to toggle the menu</button>
                 <ul>
                     <li>
@@ -89,7 +123,7 @@
                         <label for="c8">Địa chỉ</label>
                     </li>
                 </ul>
-            </div>
+            </div> -->
 
         </div>
     </main>
