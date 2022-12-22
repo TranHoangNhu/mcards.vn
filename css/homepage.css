@@ -2,11 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 body {
   scroll-behavior: smooth;
   font-family: "Roboto", sans-serif;
-  overflow-x: hidden;
 }
 #btn-back-to-top {
   position: fixed;
@@ -160,19 +160,13 @@ nav.navbar .mcard_ecormerce i:hover {
   background: url("../images/info_conect_bg.png");
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 250px;
+  min-height: 150px;
   width: 100%;
 }
-/* .touch_QR .phone_bottom_right{
-  position: relative;
-  right: 0;
-} */
-.touch_left_img img {
-  width: 100%;
+.touch_QR img{
+  
 }
-.touch_right_img img {
-  width: 100%;
-}
+
 /* Circle Contact */
 .circle_contact {
   background-color: #f2f2f2;
@@ -184,8 +178,10 @@ nav.navbar .mcard_ecormerce i:hover {
 }
 .circle_contact .image-override {
   position: relative;
+  left: -3%;
   width: 300px;
   height: 300px;
+  overflow-y: hidden;
 }
 .circle_contact .image-override img {
   position: absolute;

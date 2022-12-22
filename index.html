@@ -20,9 +20,20 @@
     <link rel="stylesheet" href="./css/animate.min.css">
     <!-- custom css -->
     <link rel="stylesheet" href="./css/homepage.css">
+    <link rel="stylesheet" href="./css/responsive_custom.css">
 </head>
 
 <body>
+    <div class="tablet_dev_background d-flex justify-content-center align-items-center">
+        <img src="./images/tablet_dev.png" alt="tablet_dev" class="w-100">
+    </div>
+    <div class="desktop_dev_background">
+        <img src="./images/desktop_dev.png" alt="desktop_dev" class="w-100">
+        <div class="container text-center">
+            <span class="text-blue-homepage fw-bold fs-2">VẪN ĐANG HOÀN THIỆN GIAO DIỆN TRÊN DESKTOP, MỜI BẠN DÙNG
+                MOBILE NHÉ</span>
+        </div>
+    </div>
     <header class="header bg-blue-dark-homepage">
         <div class="container">
             <!-- <h1 class="text-center animate__animated animate__fadeInDown animate__delay-1s">
@@ -62,35 +73,26 @@
                 <div class="row mx-auto justify-content-center align-items-center">
                     <div class="intro_left_img col-md-6 col-6">
                         <img src="./images/intro_left.png" alt="intro_left"
-                            class="animate__animated animate__fadeInLeft animate__delay-1s">
+                            class="animate__animated animate__zoomIn animate__delay-1s">
                     </div>
                     <div class="intro_right_img col-md-6 col-6">
                         <img src="./images/intro_right.png" alt="intro_right"
-                            class="animate__animated animate__fadeInRight animate__delay-1s">
+                            class="animate__animated animate__zoomIn animate__delay-1s">
                     </div>
                 </div>
             </div>
         </section>
         <section class="touch_QR d-flex justify-content-center align-items-center">
-            <div class="container">
-                <div class="row mx-auto justify-content-center align-item-center">
-                    <div class="touch_left col-md-6 col-6">
-                        <img src="./images/QR_touch_left.png" alt="touch_left"
-                            class="animate__animated animate__fadeInLeft animate__delay-3s">
-                    </div>
-                    <div class="touch_right col-md-6 col-6">
-                        <!-- <span class="text-white text-center ms-4">Lưu thông tin đơn giản chỉ với</span>
-                        <h4 class="text-white text-left">1 lần chạm mã QR CODE</h4> -->
-                        <img src="./images/QR_touch_right.png" alt="touch_right"
-                            class="animate__animated animate__fadeInRight animate__delay-3s">
-                    </div>
-                </div>
+            <div class="container text-start">
+               <img src="./images/QR_touch.png" alt="QR_touch" width="370" class="pe-4 py-3 animate__animated animate__zoomIn animate__delay-2s">
             </div>
         </section>
         <section class="circle_contact d-flex justify-content-center align-items-center">
             <div class="image-override p-3">
-                <img src="./images/contact_icon_circle.png" alt="icon_circle" class="wow animate__animated animate__rotateIn animate__delay-2s">
-                <img src="./images/QR_Circle.png" alt="QR_circle" class="wow animate__animated animate__zoomIn animate__delay-1s">
+                <img src="./images/contact_icon_circle.png" alt="icon_circle"
+                    class="wow animate__animated animate__rotateIn animate__delay-2s" width="300">
+                <img src="./images/QR_Circle.png" alt="QR_circle"
+                    class="wow animate__animated animate__zoomIn animate__delay-1s" width="300">
             </div>
         </section>
         <div class="container">
@@ -137,7 +139,7 @@
 
         </div>
     </main>
-    <footer>
+    <footer class="footer">
         <!-- place footer here -->
     </footer>
     <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
