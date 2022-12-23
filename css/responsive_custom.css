@@ -62,9 +62,7 @@
     top: -200px;
     left: 0;
   }
-  .tablet_dev_background {
-    display: none;
-  }
+  .tablet_dev_background,
   .tablet_dev_background img {
     display: none;
   }

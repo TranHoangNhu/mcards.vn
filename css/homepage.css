@@ -33,109 +33,6 @@ body {
 .text-blue-dark-homepage {
   color: #002843;
 }
-/* menu circle animate */
-.menuCircleContact,
-.menuCircleContact button {
-  font-family: "Oswald", sans-serif;
-  font-weight: 300;
-}
-
-.menuCircleContact button {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  padding: 10px;
-  background: #428bca;
-  border-radius: 50%;
-  border: 0;
-  color: white;
-  font-size: 20px;
-  cursor: pointer;
-  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
-  transition: all 0.1s;
-}
-
-.menuCircleContact button:hover {
-  background: #3071a9;
-}
-
-.menuCircleContact button:focus {
-  outline: none;
-}
-
-.menuCircleContact {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 140px;
-  height: 140px;
-  margin-top: -70px;
-  margin-left: -70px;
-}
-
-.menuCircleContact ul {
-  position: absolute;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  top: -20px;
-  right: -20px;
-  bottom: -20px;
-  left: -20px;
-}
-
-.menuCircleContact li {
-  position: absolute;
-  width: 0;
-  height: 100%;
-  margin: 0 50%;
-  -webkit-transform: rotate(-360deg);
-  transition: all 0.8s ease-in-out;
-}
-
-.menuCircleContact li input {
-  display: none;
-}
-
-.menuCircleContact li input + label {
-  position: absolute;
-  left: 50%;
-  bottom: 100%;
-  width: 0;
-  height: 0;
-  line-height: 1px;
-  margin-left: 0;
-  background: #fff;
-  border-radius: 50%;
-  text-align: center;
-  font-size: 1px;
-  overflow: hidden;
-  cursor: pointer;
-  box-shadow: none;
-  transition: all 0.8s ease-in-out, color 0.1s, background 0.1s;
-}
-
-.menuCircleContact li input + label:hover {
-  background: #f0f0f0;
-}
-
-.menuCircleContact li input:checked + label {
-  background: #5cb85c;
-  color: white;
-}
-
-.menuCircleContact li input:checked + label:hover {
-  background: #449d44;
-}
-
-.menuCircleContact.open li input + label {
-  width: 80px;
-  height: 80px;
-  line-height: 80px;
-  margin-left: -40px;
-  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
-  font-size: 14px;
-}
 /* header - navbar*/
 nav.navbar {
   background: url("../images/navbar_bg.png");
@@ -163,13 +60,10 @@ nav.navbar .mcard_ecormerce i:hover {
   min-height: 150px;
   width: 100%;
 }
-.touch_QR img{
-  
-}
 
 /* Circle Contact */
 .circle_contact {
-  background-color: #f2f2f2;
+  background-color: #f2f2f2 !important;
   background: url("../images/circle_contact_bg.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -186,7 +80,41 @@ nav.navbar .mcard_ecormerce i:hover {
 .circle_contact .image-override img {
   position: absolute;
 }
-footer.footer img{
+/* template_card */
+.list_type_card a {
+  text-decoration: none;
+  font-size: 12px;
+  transition: all 0.3s;
+}
+.template_card a {
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.template_card a:hover {
+  color: #00579c !important;
+}
+.template_card .list_type_card a:hover {
+  color: #00579c !important;
+}
+
+/* tutorial_register_section */
+.tutorial_register_section {
+  background: url("../images/tutorial_mcard_bg.png");
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  min-height: 409px;
+}
+.tutorial_register a {
+  text-decoration: none;
+  padding-top: 15px;
+}
+
+.city_img_outline img {
+  width: 100%;
+}
+/* footer */
+footer.footer img {
   position: relative;
   top: -20px;
 }
