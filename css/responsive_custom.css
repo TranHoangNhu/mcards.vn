@@ -13,7 +13,7 @@
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   body {
-    background-color: #a19389 !important;
+    background-color: #a19389;
     overflow: hidden;
   }
   .header,
@@ -38,15 +38,14 @@
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   body {
-    background-color: #a19389 !important;
-    overflow: hidden;
+    background-color: #fff;
   }
   .header,
   .main,
   .footer {
-    display: none;
+    display: block;
   }
-  .desktop_dev_background img,
+  /* .desktop_dev_background img,
   .desktop_dev_background span {
     display: block;
   }
@@ -61,9 +60,10 @@
     position: relative;
     top: -200px;
     left: 0;
-  }
+  } */
   .tablet_dev_background,
+  .desktop_dev_background,
   .tablet_dev_background img {
-    display: none;
+    display: none !important;
   }
 }

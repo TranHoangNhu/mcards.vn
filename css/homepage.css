@@ -55,31 +55,38 @@ nav.navbar .mcard_ecormerce i:hover {
 /* QR-touch section */
 .touch_QR {
   background: url("../images/info_conect_bg.png");
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
-  min-height: 150px;
   width: 100%;
+  background-color: #f2f2f2 !important;
+}
+.touch_QR img {
+  position: relative;
+  z-index: 2;
 }
 
 /* Circle Contact */
 .circle_contact {
-  background-color: #f2f2f2 !important;
   background: url("../images/circle_contact_bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  min-height: 400px;
 }
-.circle_contact .image-override {
+.circle_contact .col-8.col-md-8 {
+  overflow: hidden;
+}
+/* .circle_contact .image-override {
   position: relative;
   left: -3%;
   width: 300px;
   height: 300px;
-  overflow-y: hidden;
+}
+.circle_contact .image-override img{
+  transform: scale(-200px);
 }
 .circle_contact .image-override img {
   position: absolute;
-}
+} */
 /* template_card */
 .list_type_card a {
   text-decoration: none;
@@ -101,6 +108,7 @@ nav.navbar .mcard_ecormerce i:hover {
 .tutorial_register_section {
   background: url("../images/tutorial_mcard_bg.png");
   background-size: cover;
+  /* background-repeat: no-repeat; */
   background-position: center center;
   width: 100%;
   min-height: 409px;
@@ -112,9 +120,4 @@ nav.navbar .mcard_ecormerce i:hover {
 
 .city_img_outline img {
   width: 100%;
-}
-/* footer */
-footer.footer img {
-  position: relative;
-  top: -20px;
 }
