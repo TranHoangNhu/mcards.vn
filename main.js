@@ -20,3 +20,31 @@ function backToTop() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+//slider show list card & active blue color btn when clicked
+$(document).ready(function () {
+  $(".btn-slider").on("click", function () {
+    var thisBtn = $(this).attr("href");
+    // console.log($(this).find($(this).attr("href")));
+    $(this).parents(".container").find(`${thisBtn}`).addClass("active");
+    $(this)
+      .parents(".container")
+      .find(".carousel")
+      .not(`${thisBtn}`)
+      .removeClass("active");
+    $(this)
+      .parents(".list_type_card")
+      .find(".text-blue-light-homepage")
+      .addClass("text-dark")
+      .removeClass("text-blue-light-homepage");
+    $(this).addClass("text-blue-light-homepage").removeClass("text-dark");
+  });
+  $("#toggle_page, #toggle_customer").on("click", function () {
+    var idParam = $(this).attr("id");
+    $(this)
+      .parents(".header")
+      .find(`.navbar_body #${idParam}`)
+      .slideToggle("fast", "swing")
+      .toggleClass("d-none");
+  });
+});
+

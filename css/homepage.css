@@ -8,13 +8,7 @@ body {
   scroll-behavior: smooth;
   font-family: "Roboto", sans-serif;
 }
-#btn-back-to-top {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  border-radius: 50%;
-  display: none;
-}
+/* variable color */
 .bg-blue-homepage {
   background-color: #00579c;
 }
@@ -33,17 +27,44 @@ body {
 .text-blue-dark-homepage {
   color: #002843;
 }
+.border-blue-homepage {
+  border-color:  #00579c !important;
+}
+.border-blue-light-homepage {
+  border-color:  #077ad1 !important;
+}
+.border-blue-dark-homepage {
+  border-color:  #002843 !important;
+}
+/* css event fixed when scroll navbar */
+/* .fixed-navbar{
+  position: fixed;
+  z-index: 99999;
+  width: 100%;
+  top: 0;
+  left: 0;
+} */
+/* css button back-to-top */
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 50%;
+  display: none;
+}
 /* header - navbar*/
 nav.navbar {
   background: url("../images/navbar_bg.png");
   background-size: cover;
   background-position: left center;
-  min-height: 100px;
+  min-height: 70px;
 }
-nav.navbar .mcard_ecormerce i:hover {
-  color: #fff !important;
-  transition: all 0.3s;
+nav.navbar .navbar_page_body{
+  position: absolute;
+  top: 50px;
+  left: 50px;
 }
+
 /* intro section */
 .intro_mcard {
   background-color: #f2f2f2;
@@ -92,6 +113,7 @@ nav.navbar .mcard_ecormerce i:hover {
   text-decoration: none;
   font-size: 12px;
   transition: all 0.3s;
+  /* color: #000; */
 }
 .template_card a {
   text-decoration: none;
@@ -103,7 +125,16 @@ nav.navbar .mcard_ecormerce i:hover {
 .template_card .list_type_card a:hover {
   color: #00579c !important;
 }
-
+.slider .carousel {
+  position: relative;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.slider .active {
+  display: block;
+}
 /* tutorial_register_section */
 .tutorial_register_section {
   background: url("../images/tutorial_mcard_bg.png");
