@@ -8,6 +8,13 @@
   .desktop_dev_background img {
     display: none;
   }
+  #sendEmailSucess img.air_plane {
+    position: absolute;
+    top: 22vh;
+    /* left: 8vw; */
+    z-index: 100;
+    width: 130px;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -49,5 +56,12 @@
   .desktop_dev_background,
   .tablet_dev_background img {
     display: none !important;
+  }
+  #sendEmailSucess img.air_plane {
+    position: absolute;
+    top: 295px;
+    /* left: 8vw; */
+    z-index: 100;
+    width: 170px;
   }
 }

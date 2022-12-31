@@ -31,7 +31,7 @@ $(document).ready(function () {
       .find(".carousel")
       .not(`${thisBtn}`)
       .removeClass("active");
-    $(this)
+      $(this)
       .parents(".list_type_card")
       .find(".text-blue-light-homepage")
       .addClass("text-dark")
@@ -43,8 +43,6 @@ $(document).ready(function () {
     $(this)
       .parents(".header")
       .find(`.navbar_body #${idParam}`)
-      .slideToggle("fast", "swing")
       .toggleClass("d-none");
   });
 });
-

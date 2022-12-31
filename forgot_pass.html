@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Lấy lại mật khẩu</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- Font Awesome CSS v6.2.1  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- font roboto google css -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- 2020 Animate.css Version - 4.1.1 -->
+    <link rel="stylesheet" href="./css/animate.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/responsive_custom.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="container d-flex justify-content-between align-items-center">
+                <div class="navbar_page_toggle">
+                    <button class="bg-transparent border-0" id="toggle_page"><img src="./images/toggle_page.png"
+                            alt="toggle_page" width="25"></button>
+                </div>
+                <div class="logo_header">
+                    <img src="./images/logo_header_white.png" alt="logo_header" width="150">
+                </div>
+                <div class="navbar_customer_toggle">
+                    <button class="bg-transparent border-0" id="toggle_customer"><img src="./images/toggle_customer.png"
+                            alt="toggle_customer" width="25"></button>
+                </div>
+            </div>
+        </nav>
+        <div class="navbar_body container d-flex justify-content-between">
+            <div class="navbar_page_body w-100 d-none" id="toggle_page">
+                <a class="nav-link text-blue-light-homepage py-3 fw-bold border-bottom border-blue-light-homepage border-1"
+                    href="#bang_gia">Hỗ trợ Mcards</a>
+                <a class="nav-link text-blue-light-homepage py-3 fw-bold border-bottom border-blue-light-homepage border-1"
+                    href="#ho_tro">Hỗ trợ</a>
+                <a class="nav-link text-blue-light-homepage py-3 fw-bold" href="#lien_he">Liên hệ</a>
+            </div>
+            <div class="navbar_customer_body w-100 d-none" id="toggle_customer">
+                <a class="nav-link text-blue-light-homepage py-3 fw-bold border-bottom border-blue-light-homepage border-1 text-end"
+                    href="#">Others</a>
+                <a class="nav-link text-blue-light-homepage py-3 fw-bold border-bottom border-blue-light-homepage border-1 text-end"
+                    href="#" data-bs-toggle="modal" data-bs-target="#filter_customer_modal">Đăng Ký</a>
+                <a class="nav-link text-blue-light-homepage py-3 fw-bold text-end" href="#">Đăng nhập</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <form class="d-flex mx-auto flex-column align-items-center justify-content-center px-3">
+                <h2 class="text-center text-blue-homepage mt-5 fw-bold">BẠN QUÊN MẬT KHẨU</h2>
+                <span class="text-black-50 fw-bold fs-5 text-center my-3">Vui lòng cung cấp thông tin số điện thoại đã
+                    đăng ký.</span>
+
+                <div class="input-group mb-5 col-8 col-md-6 mt-5" style="min-height: 120px;">
+                    <label for="floatingPassword" class="pb-4 ps-2">Nhập email hoặc số điện thoại đã đăng ký</label>
+                    <input type="text" class="form-control mt-4" id="floatingPassword" placeholder="Password">
+                    <button class="btn" type="submit" id="button-addon2"><img src="./images/enter_icon.png"
+                            alt="enter_icon" width="35"></button>
+                </div>
+            </form>
+            <div class="d-flex mx-auto flex-column align-items-center justify-content-center px-3">
+                <button type="button" class="btn bg-transparent border-dark" data-bs-toggle="modal"
+                    data-bs-target="#emailNotExist">
+                    test pop-up email không tồn tại
+                </button>
+                <button type="button" class="btn bg-transparent border-dark mt-5" data-bs-toggle="modal"
+                    data-bs-target="#sendEmailSucess">
+                    test pop-up gửi email thành công
+                </button>
+            </div>
+        </div>
+    </main>
+    <!-- <style>
+        footer.footer {
+            position: absolute;
+            width: 100%;
+            bottom: 30px;
+        }
+    </style> -->
+    <footer class="footer pt-5 pb-3">
+        <div class="container">
+            <div class="row mx-auto flex-column justify-content-center align-items-center mt-5 pt-5">
+                <div class="col-4 col-md-8 w-100 text-center">
+                    <span class="text-blue-light-homepage fs-5">www.mcards.vn</span>
+                </div>
+                <div class="col-3 col-md-3 w-100">
+                    <span><img src="./images/logo_mcard _footer.png" alt="logo_mcard_footer" class="w-100 px-5"></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Pop-Up Email existn't -->
+    <div class="modal fade" id="emailNotExist" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered px-2">
+            <div class="modal-content rounded-4">
+                <div class="modal-body bg_modal_custom p-0">
+                    <div class="modal-body_header">
+                        <button class="btn bg-transparent float-end" data-bs-dismiss="modal"><img
+                                src="./images/close_icon.png" alt="close_icon" width="25"></button>
+                    </div>
+                    <div class="d-flex flex-column py-3 justify-content-center align-items-center">
+                        <img src="./images/logo_mcard.png" alt="logo_mcard" width="180">
+                        <span class="pt-5 fs-5 text-center">Email không tồn tại trong hệ thống</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Pop-up send email sucess -->
+    <div class="modal fade" id="sendEmailSucess" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered px-2">
+            <img class="air_plane" src="./images/airplane_modal.png" alt="airplane_modal">
+            <div class="modal-content rounded-4">
+                <div class="modal-body bg_modal_custom p-0">
+                    <div class="modal-body_header">
+                        <button class="btn bg-transparent float-end" data-bs-dismiss="modal"><img
+                                src="./images/close_icon.png" alt="close_icon" width="25"></button>
+                    </div>
+                    <div class="d-flex flex-column py-3 justify-content-center align-items-center">
+                        <img src="./images/logo_mcard.png" alt="logo_mcard" width="200">
+                        <span class="pt-5 fs-5 px-3 text-center">Vui lòng kiểm tra mật khẩu mới chúng tôi đã gửi cho bạn
+                            qua email</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Jquery v-3.6.3 CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+    <script>
+        $(document).ready(function () {
+            $("#toggle_page, #toggle_customer").on("click", function () {
+                var idParam = $(this).attr("id");
+                $(this)
+                    .parents(".header")
+                    .find(`.navbar_body #${idParam}`)
+                    .slideToggle("fast", "swing")
+                    .toggleClass("d-none");
+            });
+        });
+    </script>
+</body>
+
+</html>

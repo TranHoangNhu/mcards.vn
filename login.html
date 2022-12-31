@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Trang đăng nhập</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- Font Awesome CSS v6.2.1  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- font roboto google css -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- 2020 Animate.css Version - 4.1.1 -->
+    <link rel="stylesheet" href="./css/animate.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="container d-flex justify-content-between align-items-center">
+                <div class="navbar_page_toggle">
+                    <button class="bg-transparent border-0" id="toggle_page"><img src="./images/toggle_page.png"
+                            alt="toggle_page" width="25"></button>
+                </div>
+                <div class="logo_header">
+                    <img src="./images/logo_header_white.png" alt="logo_header" width="150">
+                </div>
+                <div class="navbar_customer_toggle">
+                    <button class="bg-transparent border-0" id="toggle_customer"><img src="./images/toggle_customer.png"
+                            alt="toggle_customer" width="25"></button>
+                </div>
+            </div>
+        </nav>
+        <div class="navbar_body container d-flex justify-content-between">
+            <div class="navbar_page_body w-100 d-none" id="toggle_page">
+                <a class="nav-link text-blue-light-homepage py-3 fw-bold border-bottom border-blue-light-homepage border-1"
+                    href="#bang_gia">Bảng giá</a>
+                <a class="nav-link text-blue-light-homepage py-3 fw-bold border-bottom border-blue-light-homepage border-1"
+                    href="#ho_tro">Hỗ trợ</a>
+                <a class="nav-link text-blue-light-homepage py-3 fw-bold" href="#lien_he">Liên hệ</a>
+            </div>
+            <div class="navbar_customer_body w-100 d-none" id="toggle_customer">
+                <a class="nav-link text-blue-light-homepage py-3 fw-bold border-bottom border-blue-light-homepage border-1 text-end"
+                    href="#">Others</a>
+                <a class="nav-link text-blue-light-homepage py-3 fw-bold border-bottom border-blue-light-homepage border-1 text-end"
+                    href="#" data-bs-toggle="modal" data-bs-target="#filter_customer_modal">Đăng Ký</a>
+                <a class="nav-link text-blue-light-homepage py-3 fw-bold text-end" href="#">Đăng nhập</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <form class="d-flex mx-auto flex-column align-items-center justify-content-center px-3">
+                <h2 class="text-center text-blue-homepage mt-5 fw-bold">ĐĂNG NHẬP</h2>
+                <div class="input-group my-4 col-8 col-md-6">
+                    <label for="floatingInput" class="pb-2 ps-2">Email address</label>
+                    <input type="email" class="form-control mt-4" id="floatingInput" placeholder="name@example.com">
+                </div>
+                <div class="input-group mb-5 col-8 col-md-6">
+                    <label for="floatingPassword" class="pb-2 ps-2">Password</label>
+                    <input type="password" class="form-control mt-4" id="floatingPassword" placeholder="Password">
+                    <button class="btn" type="submit" id="button-addon2"><img src="./images/enter_icon.png"
+                            alt="enter_icon" width="40"></button>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label ps-2 fs-4" for="flexCheckDefault">
+                        Lưu mật khẩu
+                    </label>
+                </div>
+                <div class="line-hr"></div>
+                <a href="forgot_pass.html" class="text-center pt-3 text-decoration-none text-blue-light-homepage fs-5">Quên mật khẩu ?</a>
+            </form>
+            <div class="px-4 mt-4 d-flex justify-content-evenly">
+                <span>Bạn chưa có tài khoản <img src="./images/logo_no_slogan.png" alt="logo_no_slogan" width="100" class="pb-1">?</span>
+                <a class="text-decoration-none text-blue-light-homepage fw-bold" href="#">Đăng ký ngay.</a>
+            </div>
+        </div>
+    </main>
+    <hr>
+    <footer class="footer pt-5 pb-3">
+        <div class="mb-5 text-center">
+            <span class="pb-5 fw-bold">Bạn cần liên hệ với chúng tôi&nbsp;&nbsp;&nbsp;&nbsp;1800xxxxx</span>
+        </div>
+        <div class="container">
+            <div class="row mx-auto flex-column justify-content-center align-items-center mt-5 pt-5">
+                <div class="col-4 col-md-8 w-100 text-center">
+                    <span class="text-blue-light-homepage fs-5">www.mcards.vn</span>
+                </div>
+                <div class="col-3 col-md-3 w-100">
+                    <span><img src="./images/logo_mcard _footer.png" alt="logo_mcard_footer" class="w-100 px-5"></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Jquery v-3.6.3 CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+    <script>
+        $(document).ready(function () {
+            $("#toggle_page, #toggle_customer").on("click", function () {
+                var idParam = $(this).attr("id");
+                $(this)
+                    .parents(".header")
+                    .find(`.navbar_body #${idParam}`)
+                    .slideToggle("fast", "swing")
+                    .toggleClass("d-none");
+            });
+        });
+    </script>
+</body>
+
+</html>
