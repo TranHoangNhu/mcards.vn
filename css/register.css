@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+body {
+  background-color: #fbfcfd;
+  scroll-behavior: smooth;
+  font-family: "Roboto", sans-serif;
+}
+/* rotate jquery */
+.rotate {
+  transform: rotate(-180deg);
+  /*transform: rotate(180deg);*/
+  transition: 0.3s;
+}
+.rotate-reset {
+  transform: rotate(0deg);
+  transition: 0.3s;
+}
+
+/* variable color */
+.bg-blue-homepage {
+  background-color: #026bb1;
+}
+.bg-blue-light-homepage {
+  background-color: #077ad1;
+}
+.bg-blue-dark-homepage {
+  background-color: #002843;
+}
+.text-blue-homepage {
+  color: #00579c;
+}
+.text-blue-light-homepage {
+  color: #077ad1;
+}
+.text-blue-dark-homepage {
+  color: #002843;
+}
+.border-blue-homepage {
+  border-color: #00579c !important;
+}
+.border-blue-light-homepage {
+  border-color: #077ad1 !important;
+}
+.border-blue-dark-homepage {
+  border-color: #002843 !important;
+}
+/* header - navbar*/
+nav.navbar {
+  background: url("../images/navbar_bg.png");
+  background-size: cover;
+  background-position: left center;
+  min-height: 70px;
+}
+nav.navbar .navbar_page_body {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+/* input css login */
+.input-group label {
+  position: absolute;
+  pointer-events: none;
+  font-size: 1rem;
+  top: 40%;
+  left: 0;
+  transform: translateY(-50%);
+  transition: all ease-in 0.25s;
+  color: #0e69ae;
+}
+.input-group input::placeholder {
+  opacity: 0;
+}
+.input-group input {
+  /* width: 100%; */
+  border: none;
+  background: transparent !important;
+  line-height: 2em;
+  border-bottom: 1px solid #9494a4;
+  color: #000;
+  appearance: none !important;
+}
+.input-group input:focus {
+  border-bottom: 2px solid #00579c;
+  box-shadow: none;
+}
+.avatar_KHCN.text-center > button {
+  position: relative;
+  right: -50px;
+  bottom: 60px;
+}
+.imageCheckbox .form-check {
+  background-color: #e9e9e9;
+  padding: 5px 10px 5px 10px;
+}
+.imageCheckbox .form-check label {
+  position: relative;
+  top: 3px;
+}
+.imageCheckbox .form-check input[type="checkbox"] {
+  position: relative;
+  top: -5px;
+  left: 20px;
+  z-index: 2;
+  width: 15px;
+  height: 15px;
+}
+.dropdowndropdownAddress_body {
+  background: url("../images/dropdown_bg.png");
+  background-size: cover;
+  background-position: center center;
+}
