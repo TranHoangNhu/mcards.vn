@@ -9,17 +9,6 @@ body {
   scroll-behavior: smooth;
   font-family: "Roboto", sans-serif;
 }
-/* rotate jquery */
-.rotate {
-  transform: rotate(-180deg);
-  /*transform: rotate(180deg);*/
-  transition: 0.3s;
-}
-.rotate-reset {
-  transform: rotate(0deg);
-  transition: 0.3s;
-}
-
 /* variable color */
 .bg-blue-homepage {
   background-color: #026bb1;
