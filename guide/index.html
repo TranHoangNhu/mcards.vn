@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Title</title>
+    <title>Trang Hướng Dẫn</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,11 +10,60 @@
     <!-- Bootstrap CSS v5.2.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 
 </head>
 
 <body>
-    <h1>TRANG HƯỚNG DẪN</h1>
+    <header class="header">
+        <nav class="navbar">
+            <div class="container d-flex justify-content-between align-baseline">
+                <div class="navbar_page_toggle d-none">
+                    <button class="bg-transparent border-0" id="toggle_page"><img src="../images/toggle_page.png"
+                            alt="toggle_page" width="25"></button>
+                </div>
+                <div class="logo_header">
+                    <img src="../images/logo_header_white.png" alt="logo_header" width="150">
+                </div>
+                <a href="https://mcards.vn/register/" class="text-decoration-none text-white nav-link-large pt-1">Khách
+                    Hàng Cá
+                    Nhân</a>
+                <a href="https://mcards.vn/business/" class="text-decoration-none text-white nav-link-large pt-1">Khách
+                    Hàng
+                    Doanh Nghiệp</a>
+                <a href="https://mcards.vn/#bang_gia" class="text-decoration-none text-white nav-link-large pt-1">Hướng
+                    Dẫn</a>
+                <a href="https://mcards.vn/#ho_tro" class="text-decoration-none text-white nav-link-large pt-1">Liên
+                    Hệ</a>
+                <a href="#" class="text-decoration-none text-white nav-link-large pt-2 fs-5"><i
+                        class="fa-solid fa-magnifying-glass"></i></a>
+                <div class="navbar_customer_toggle">
+                    <button class="bg-transparent border-0" id="toggle_customer"><img
+                            src="../images/toggle_customer.png" alt="toggle_customer" width="25"></button>
+                </div>
+            </div>
+        </nav>
+        <div class="navbar_body container d-flex justify-content-between">
+            <div class="navbar_page_body w-100 d-none" id="toggle_page">
+                <a class="nav-link text-blue-light-homepage py-3 fw-bold border-bottom border-blue-light-homepage border-1"
+                    href="https://mcards.vn/register/">Khách Hàng Cá Nhân</a>
+                <a class="nav-link text-blue-light-homepage py-3 fw-bold border-bottom border-blue-light-homepage border-1"
+                    href="https://mcards.vn/business/">Khách Hàng Doanh Nghiệp</a>
+                <a class="nav-link text-blue-light-homepage py-3 fw-bold border-bottom border-blue-light-homepage border-1"
+                    href="https://mcards.vn/#bang_gia">Hướng Dẫn</a>
+                <a class="nav-link text-blue-light-homepage py-3 fw-bold border-blue-light-homepage"
+                    href="https://mcards.vn/#ho_tro">Liên Hệ</a>
+            </div>
+            <div class="navbar_customer_body w-100 d-none" id="toggle_customer">
+                <a class="nav-link text-blue-light-homepage py-3 fw-bold text-end"
+                    href="https://mcards.vn/login.html">Đăng
+                    nhập</a>
+            </div>
+        </div>
+    </header>
+    <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
@@ -23,6 +72,31 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
         integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
         </script>
+    <script>
+        $(document).ready(function () {
+            $("#toggle_page, #toggle_customer").on("click", function () {
+                var idParam = $(this).attr("id");
+                $(this)
+                    .parents(".header")
+                    .find(`.navbar_body #${idParam}`)
+                    .toggleClass("d-none");
+                if (idParam === "toggle_page") {
+                    $(".navbar_body #toggle_customer").addClass("d-none");
+                } else $(".navbar_body #toggle_page").addClass("d-none");
+            });
+            var WidthPC = window.matchMedia("(min-width: 992px)");
+            if (WidthPC.matches) {
+                $(".container-fluid").removeClass("container-fluid").addClass("container");
+            }
+            // breakPoint mobile
+            var WidthPC = window.matchMedia("(max-width: 576px)");
+            if (WidthPC.matches) {
+                $(".container-fluid").removeClass("container-fluid");
+                $(".navbar_page_toggle").removeClass("d-none");
+                $(".nav-link-large").addClass("d-none");
+            }
+        });
+    </script>
 </body>
 
 </html>

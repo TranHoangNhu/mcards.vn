@@ -23,6 +23,7 @@ function backToTop() {
 //slider show list card & active blue color btn when clicked
 $(document).ready(function () {
   $(".btn-slider").on("click", function () {
+    // event slider template card
     var thisBtn = $(this).attr("href");
     // console.log($(this).find($(this).attr("href")));
     $(this).parents(".container").find(`${thisBtn}`).addClass("active");
@@ -31,18 +32,34 @@ $(document).ready(function () {
       .find(".carousel")
       .not(`${thisBtn}`)
       .removeClass("active");
-      $(this)
+    $(this)
       .parents(".list_type_card")
       .find(".text-blue-light-homepage")
       .addClass("text-dark")
       .removeClass("text-blue-light-homepage");
     $(this).addClass("text-blue-light-homepage").removeClass("text-dark");
   });
+  // event navbar click toggle
   $("#toggle_page, #toggle_customer").on("click", function () {
     var idParam = $(this).attr("id");
     $(this)
       .parents(".header")
       .find(`.navbar_body #${idParam}`)
       .toggleClass("d-none");
+    if (idParam === "toggle_page") {
+      $(".navbar_body #toggle_customer").addClass("d-none");
+    } else $(".navbar_body #toggle_page").addClass("d-none");
   });
+  // breakPoint laptop
+  var WidthPC = window.matchMedia("(min-width: 992px)");
+  if (WidthPC.matches) {
+    $(".container-fluid").removeClass("container-fluid").addClass("container");
+  }
+  // breakPoint mobile
+  var WidthPC = window.matchMedia("(max-width: 576px)");
+  if (WidthPC.matches) {
+    $(".container-fluid").removeClass("container-fluid");
+    $(".navbar_page_toggle").removeClass("d-none");
+    $(".nav-link-large").addClass("d-none");
+  }
 });

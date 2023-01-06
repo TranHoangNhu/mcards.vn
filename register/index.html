@@ -25,14 +25,22 @@
 <body>
   <header class="header">
     <nav class="navbar">
-      <div class="container d-flex justify-content-between align-items-center">
-        <div class="navbar_page_toggle">
-          <button class="bg-transparent border-0" id="toggle_page"><img src="../images/toggle_page.png" alt="toggle_page"
-              width="25"></button>
+      <div class="container d-flex justify-content-between align-baseline">
+        <div class="navbar_page_toggle d-none">
+          <button class="bg-transparent border-0" id="toggle_page"><img src="../images/toggle_page.png"
+              alt="toggle_page" width="25"></button>
         </div>
         <div class="logo_header">
           <img src="../images/logo_header_white.png" alt="logo_header" width="150">
         </div>
+        <a href="https://mcards.vn/register/" class="text-decoration-none text-white nav-link-large pt-1">Khách Hàng Cá
+          Nhân</a>
+        <a href="https://mcards.vn/business/" class="text-decoration-none text-white nav-link-large pt-1">Khách Hàng
+          Doanh Nghiệp</a>
+        <a href="https://mcards.vn/#bang_gia" class="text-decoration-none text-white nav-link-large pt-1">Hướng Dẫn</a>
+        <a href="https://mcards.vn/#ho_tro" class="text-decoration-none text-white nav-link-large pt-1">Liên Hệ</a>
+        <a href="#" class="text-decoration-none text-white nav-link-large pt-2 fs-5"><i
+            class="fa-solid fa-magnifying-glass"></i></a>
         <div class="navbar_customer_toggle">
           <button class="bg-transparent border-0" id="toggle_customer"><img src="../images/toggle_customer.png"
               alt="toggle_customer" width="25"></button>
@@ -42,18 +50,15 @@
     <div class="navbar_body container d-flex justify-content-between">
       <div class="navbar_page_body w-100 d-none" id="toggle_page">
         <a class="nav-link text-blue-light-homepage py-3 fw-bold border-bottom border-blue-light-homepage border-1"
-          href="https://mcards.vn/#bang_gia">Bảng giá</a>
+          href="https://mcards.vn/register/">Khách Hàng Cá Nhân</a>
         <a class="nav-link text-blue-light-homepage py-3 fw-bold border-bottom border-blue-light-homepage border-1"
-          href="https://mcards.vn/#ho_tro">Hỗ trợ</a>
-        <a class="nav-link text-blue-light-homepage py-3 fw-bold" href="https://mcards.vn/#lien_he">Liên hệ</a>
+          href="https://mcards.vn/business/">Khách Hàng Doanh Nghiệp</a>
+        <a class="nav-link text-blue-light-homepage py-3 fw-bold border-bottom border-blue-light-homepage border-1"
+          href="https://mcards.vn/#bang_gia">Hướng Dẫn</a>
+        <a class="nav-link text-blue-light-homepage py-3 fw-bold border-blue-light-homepage"
+          href="https://mcards.vn/#ho_tro">Liên Hệ</a>
       </div>
       <div class="navbar_customer_body w-100 d-none" id="toggle_customer">
-        <a class="nav-link text-blue-light-homepage py-3 fw-bold border-bottom border-blue-light-homepage border-1 text-end"
-          href="#">Others</a>
-        <a class="nav-link text-blue-light-homepage py-3 fw-bold border-bottom border-blue-light-homepage border-1 text-end"
-          href="https://mcards.vn/register/">Đăng Ký Cá Nhân</a>
-        <a class="nav-link text-blue-light-homepage py-3 fw-bold border-bottom border-blue-light-homepage border-1 text-end"
-          href="https://mcards.vn/business/">Đăng Ký Doanh Nghiệp</a>
         <a class="nav-link text-blue-light-homepage py-3 fw-bold text-end" href="https://mcards.vn/login.html">Đăng
           nhập</a>
       </div>
@@ -63,51 +68,51 @@
     <div class="container">
       <form class=" d-flex mx-auto flex-column align-items-center justify-content-center px-3">
         <h4 class="text-center text-blue-homepage mt-3 fw-bold" style="line-height: 2;">
-          Đăng ký <img src="../images/logo_KHCN.png" alt="logo_no_slogan" width="150" class="pb-2"> của bạn
+          Đăng ký <img src=".../images/logo_KHCN.png" alt="logo_no_slogan" width="150" class="pb-2"> của bạn
         </h4>
         <span class="text-center text-black-50 fw-bold fs-5 my-3">Thêm ảnh đại diện</span>
         <div class="avatar_KHCN text-center">
-          <h5><img src="../images/avatar_KHCN.png" alt="avatar_KHCN" width="150"></h5>
-          <button class="btn border-0 btn-camera"><img src="../images/camera_icon.png" alt="camera_icon"
+          <h5><img src=".../images/avatar_KHCN.png" alt="avatar_KHCN" width="150"></h5>
+          <button class="btn border-0 btn-camera"><img src=".../images/camera_icon.png" alt="camera_icon"
               width="50"></button>
         </div>
         <div class="input-group mb-4 col-8 col-md-6 text-blue-dark-homepage">
-          <label class="pt-3"><img src="../images/user_icon.png" alt="enter_icon" width="25"></label>
+          <label class="pt-3"><img src=".../images/user_icon.png" alt="enter_icon" width="25"></label>
           <label for="userPerson" class="pb-4 ps-5 fw-bold">Họ & Tên</label>
           <input type="text" class="form-control mt-4 ps-5" id="userPerson" style="color:#00579c">
         </div>
         <div class="input-group mb-4 col-8 col-md-6 text-blue-dark-homepage">
-          <label class="pt-3"><img src="../images/phone_icon.png" alt="enter_icon" width="25"></label>
+          <label class="pt-3"><img src=".../images/phone_icon.png" alt="enter_icon" width="25"></label>
           <label for="phonePerson" class="pb-4 ps-5 fw-bold">Số điện thoại</label>
           <input type="text" class="form-control mt-4 ps-5" id="phonePerson" style="color:#00579c">
         </div>
         <div class="input-group mb-4 col-8 col-md-6 text-blue-dark-homepage">
-          <label class="pt-3"><img src="../images/location_icon.png" alt="enter_icon" width="25"></label>
+          <label class="pt-3"><img src=".../images/location_icon.png" alt="enter_icon" width="25"></label>
           <label for="addressPerson" class="pb-4 ps-5 fw-bold">Địa chỉ</label>
           <input type="text" class="form-control mt-4 ps-5" id="addressPerson" style="color:#00579c">
         </div>
         <div class="input-group mb-4 col-8 col-md-6 text-blue-dark-homepage">
-          <label class="pt-3"><img src="../images/company_icon.png" alt="enter_icon" width="25"></label>
+          <label class="pt-3"><img src=".../images/company_icon.png" alt="enter_icon" width="25"></label>
           <label for="companyPerson" class="pb-4 ps-5 fw-bold">Công ty</label>
           <input type="text" class="form-control mt-4 ps-5" id="companyPerson" style="color:#00579c">
         </div>
         <div class="input-group mb-4 col-8 col-md-6 text-blue-dark-homepage">
-          <label class="pt-3"><img src="../images/department_icon.png" alt="enter_icon" width="25"></label>
+          <label class="pt-3"><img src=".../images/department_icon.png" alt="enter_icon" width="25"></label>
           <label for="departmentPerson" class="pb-4 ps-5 fw-bold">Phòng ban</label>
           <input type="text" class="form-control mt-4 ps-5" id="departmentPerson" style="color:#00579c">
         </div>
         <div class="input-group mb-4 col-8 col-md-6 text-blue-dark-homepage">
-          <label class="pt-3"><img src="../images/career_icon.png" alt="enter_icon" width="25"></label>
+          <label class="pt-3"><img src=".../images/career_icon.png" alt="enter_icon" width="25"></label>
           <label for="careerPerson" class="pb-4 ps-5 fw-bold">Phòng ban</label>
           <input type="text" class="form-control mt-4 ps-5" id="careerPerson" style="color:#00579c">
         </div>
         <div class="input-group mb-4 col-8 col-md-6 text-blue-dark-homepage">
-          <label class="pt-3"><img src="../images/email_icon.png" alt="enter_icon" width="25"></label>
+          <label class="pt-3"><img src=".../images/email_icon.png" alt="enter_icon" width="25"></label>
           <label for="emailPerson" class="pb-4 ps-5 fw-bold">Email</label>
           <input type="text" class="form-control mt-4 ps-5" id="emailPerson" style="color:#00579c">
         </div>
         <div class="input-group mb-4 col-8 col-md-6 text-blue-dark-homepage">
-          <label class="pt-3"><img src="../images/website_icon.png" alt="enter_icon" width="25"></label>
+          <label class="pt-3"><img src=".../images/website_icon.png" alt="enter_icon" width="25"></label>
           <label for="webSitePerson" class="pb-4 ps-5 fw-bold">Website</label>
           <input type="text" class="form-control mt-4 ps-5" id="webSitePerson" style="color:#00579c">
         </div>
@@ -115,19 +120,19 @@
           <div class="form-check col-3 col-md-3 pt-2">
             <input class="form-check-input" type="checkbox" value="" id="checkboxImg1">
             <label class="form-check-label" for="checkboxImg1">
-              <img src="../images/imgCheckbox_1.png" alt="imgCheckbox_1" class="w-100">
+              <img src=".../images/imgCheckbox_1.png" alt="imgCheckbox_1" class="w-100">
             </label>
           </div>
           <div class="form-check col-3 col-md-3 pt-2">
             <input class="form-check-input" type="checkbox" value="" id="checkboxImg2">
             <label class="form-check-label" for="checkboxImg2">
-              <img src="../images/imgCheckbox_2.png" alt="imgCheckbox_2" class="w-100">
+              <img src=".../images/imgCheckbox_2.png" alt="imgCheckbox_2" class="w-100">
             </label>
           </div>
           <div class="form-check col-3 col-md-3 pt-2">
             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
             <label class="form-check-label" for="flexCheckDefault3">
-              <img src="../images/imgCheckbox_3.png" alt="imgCheckbox_3" class="w-100">
+              <img src=".../images/imgCheckbox_3.png" alt="imgCheckbox_3" class="w-100">
             </label>
           </div>
         </div>
@@ -137,17 +142,17 @@
         </div>
         <div class="dropdowndropdownAddress_body w-100 mb-5 p-5">
           <div class="input-group mb-4 col-8 col-md-6 text-blue-dark-homepage">
-            <label class="pt-3"><img src="../images/user_icon.png" alt="enter_icon" width="25"></label>
+            <label class="pt-3"><img src=".../images/user_icon.png" alt="enter_icon" width="25"></label>
             <label for="userPerson" class="pb-4 ps-5 fw-bold">Họ & Tên</label>
             <input type="text" class="form-control mt-4 ps-5" id="userPerson" style="color:#00579c">
           </div>
           <div class="input-group mb-4 col-8 col-md-6 text-blue-dark-homepage">
-            <label class="pt-3"><img src="../images/phone_icon.png" alt="enter_icon" width="25"></label>
+            <label class="pt-3"><img src=".../images/phone_icon.png" alt="enter_icon" width="25"></label>
             <label for="phonePerson" class="pb-4 ps-5 fw-bold">Số điện thoại</label>
             <input type="text" class="form-control mt-4 ps-5" id="phonePerson" style="color:#00579c">
           </div>
           <div class="input-group mb-4 col-8 col-md-6 text-blue-dark-homepage">
-            <label class="pt-3"><img src="../images/location_icon.png" alt="enter_icon" width="25"></label>
+            <label class="pt-3"><img src=".../images/location_icon.png" alt="enter_icon" width="25"></label>
             <label for="addressPerson" class="pb-4 ps-5 fw-bold">Địa chỉ</label>
             <input type="text" class="form-control mt-4 ps-5" id="addressPerson" style="color:#00579c">
           </div>
@@ -177,16 +182,22 @@
         $(this)
           .parents(".header")
           .find(`.navbar_body #${idParam}`)
-          .slideToggle("fast", "swing")
           .toggleClass("d-none");
+        if (idParam === "toggle_page") {
+          $(".navbar_body #toggle_customer").addClass("d-none");
+        } else $(".navbar_body #toggle_page").addClass("d-none");
       });
-      $(".dropdownAddress").on("click", function () {
-        if ($(this).children().hasClass("fa-angle-up")) {
-          $(this).children().removeClass("fa-angle-up").addClass("fa-angle-down");
-        }
-        else $(this).children().removeClass("fa-angle-down").addClass("fa-angle-up");
-        $(".dropdowndropdownAddress_body").slideToggle();
-      });
+      var WidthPC = window.matchMedia("(min-width: 992px)");
+      if (WidthPC.matches) {
+        $(".container-fluid").removeClass("container-fluid").addClass("container");
+      }
+      // breakPoint mobile
+      var WidthPC = window.matchMedia("(max-width: 576px)");
+      if (WidthPC.matches) {
+        $(".container-fluid").removeClass("container-fluid");
+        $(".navbar_page_toggle").removeClass("d-none");
+        $(".nav-link-large").addClass("d-none");
+      }
     });
   </script>
 </body>

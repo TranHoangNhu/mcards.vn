@@ -29,14 +29,19 @@
     </div>
     <header class="header">
         <nav class="navbar">
-            <div class="container d-flex justify-content-between align-items-center">
-                <div class="navbar_page_toggle">
+            <div class="container d-flex justify-content-between align-baseline">
+                <div class="navbar_page_toggle d-none">
                     <button class="bg-transparent border-0" id="toggle_page"><img src="./images/toggle_page.png"
                             alt="toggle_page" width="25"></button>
                 </div>
                 <div class="logo_header">
                     <img src="./images/logo_header_white.png" alt="logo_header" width="150">
                 </div>
+                <a href="https://mcards.vn/register/" class="text-decoration-none text-white nav-link-large pt-1">Khách Hàng Cá Nhân</a>
+                <a href="https://mcards.vn/business/" class="text-decoration-none text-white nav-link-large pt-1">Khách Hàng Doanh Nghiệp</a>
+                <a href="https://mcards.vn/#bang_gia" class="text-decoration-none text-white nav-link-large pt-1">Hướng Dẫn</a>
+                <a href="https://mcards.vn/#ho_tro" class="text-decoration-none text-white nav-link-large pt-1">Liên Hệ</a>
+                <a href="#" class="text-decoration-none text-white nav-link-large pt-2 fs-5"><i class="fa-solid fa-magnifying-glass"></i></a>
                 <div class="navbar_customer_toggle">
                     <button class="bg-transparent border-0" id="toggle_customer"><img src="./images/toggle_customer.png"
                             alt="toggle_customer" width="25"></button>
@@ -46,19 +51,17 @@
         <div class="navbar_body container d-flex justify-content-between">
             <div class="navbar_page_body w-100 d-none" id="toggle_page">
                 <a class="nav-link text-blue-light-homepage py-3 fw-bold border-bottom border-blue-light-homepage border-1"
-                    href="https://mcards.vn/#bang_gia">Bảng giá</a>
+                    href="https://mcards.vn/register/">Khách Hàng Cá Nhân</a>
                 <a class="nav-link text-blue-light-homepage py-3 fw-bold border-bottom border-blue-light-homepage border-1"
-                    href="https://mcards.vn/#ho_tro">Hỗ trợ</a>
-                <a class="nav-link text-blue-light-homepage py-3 fw-bold" href="https://mcards.vn/#lien_he">Liên hệ</a>
+                    href="https://mcards.vn/business/">Khách Hàng Doanh Nghiệp</a>
+                <a class="nav-link text-blue-light-homepage py-3 fw-bold border-bottom border-blue-light-homepage border-1"
+                    href="https://mcards.vn/#bang_gia">Hướng Dẫn</a>
+                <a class="nav-link text-blue-light-homepage py-3 fw-bold border-blue-light-homepage"
+                    href="https://mcards.vn/#ho_tro">Liên Hệ</a>
             </div>
             <div class="navbar_customer_body w-100 d-none" id="toggle_customer">
-                <a class="nav-link text-blue-light-homepage py-3 fw-bold border-bottom border-blue-light-homepage border-1 text-end"
-                    href="#">Others</a>
-                <a class="nav-link text-blue-light-homepage py-3 fw-bold border-bottom border-blue-light-homepage border-1 text-end"
-                    href="https://mcards.vn/register/">Đăng Ký Cá Nhân</a>
-                <a class="nav-link text-blue-light-homepage py-3 fw-bold border-bottom border-blue-light-homepage border-1 text-end"
-                    href="https://mcards.vn/business/">Đăng Ký Doanh Nghiệp</a>
-                <a class="nav-link text-blue-light-homepage py-3 fw-bold text-end" href="https://mcards.vn/login.html">Đăng nhập</a>
+                <a class="nav-link text-blue-light-homepage py-3 fw-bold text-end"
+                    href="https://mcards.vn/login.html">Đăng nhập</a>
             </div>
         </div>
     </header>
@@ -76,35 +79,37 @@
                     </div>
                     <div class="intro_right_img col-md-6 col-6">
                         <img src="./images/intro_right.png" alt="intro_right"
-                            class="animate__animated animate__zoomIn animate__delay-1s">
+                            class="animate__animated animate__zoomIn animate__delay-1s ms-3">
                     </div>
                 </div>
             </div>
         </section>
-        <section class="touch_QR" id="lien_he">
-            <img src="./images/QR_touch.png" alt="QR_touch"
-                class="mt-4 w-100 py-2 animate__animated animate__zoomIn animate__delay-2s">
-            <div class="circle_contact d-flex justify-content-center align-items-center p-3">
-                <div class="row mx-auto flex-column justify-content-center align-items-center">
-                    <div class="col-8 col-md-8 wow animate__animated animate__rotateIn animate__delay-1s">
-                        <img src="./images/contact_circle.png" alt="icon_circle" class="w-100">
+        <div class="container-fluid">
+            <section class="touch_QR" id="lien_he">
+                <img src="./images/QR_touch.png" alt="QR_touch"
+                    class="mt-4 w-100 py-2 animate__animated animate__zoomIn animate__delay-2s">
+                <div class="circle_contact d-flex justify-content-center align-items-center p-3">
+                    <div class="row mx-auto flex-column justify-content-center align-items-center">
+                        <div class="col-8 col-md-8 wow animate__animated animate__rotateIn animate__delay-1s">
+                            <img src="./images/contact_circle.png" alt="icon_circle" class="w-100">
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
         <section class="template_card" id="bang_gia">
             <div class="container">
                 <div class="slider">
                     <!-- slider GOLD-CARD btn -->
                     <div id="item1" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
+                        <!-- <div class="carousel-indicators">
                             <button type="button" data-bs-target="#item1" data-bs-slide-to="0" class="active"
                                 aria-current="true" aria-label="Slide 1"></button>
                             <button type="button" data-bs-target="#item1" data-bs-slide-to="1"
                                 aria-label="Slide 2"></button>
                             <button type="button" data-bs-target="#item1" data-bs-slide-to="2"
                                 aria-label="Slide 3"></button>
-                        </div>
+                        </div> -->
                         <div class="carousel-inner">
                             <div class="carousel-item active" data-bs-interval="10000">
                                 <img src="./images/GOLD-CARD.png" class="d-block w-100" alt="...">
@@ -138,7 +143,7 @@
                     </div>
                     <!-- slider VIP-CARD btn -->
                     <div id="item2" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
+                        <!-- <div class="carousel-indicators">
                             <button type="button" data-bs-target="#item2" data-bs-slide-to="0" class="active"
                                 aria-current="true" aria-label="Slide 1"></button>
                             <button type="button" data-bs-target="#item2" data-bs-slide-to="1"
@@ -147,7 +152,7 @@
                                 aria-label="Slide 3"></button>
                             <button type="button" data-bs-target="#item2" data-bs-slide-to="3"
                                 aria-label="Slide 3"></button>
-                        </div>
+                        </div> -->
                         <div class="carousel-inner">
                             <div class="carousel-item active" data-bs-interval="10000">
                                 <img src="./images/PRIME-CARD.png" class="d-block w-100" alt="...">
@@ -187,14 +192,14 @@
                     </div>
                     <!-- slider PRIME-CARD btn -->
                     <div id="item3" class="carousel carousel-dark slide active" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
+                        <!-- <div class="carousel-indicators">
                             <button type="button" data-bs-target="#item3" data-bs-slide-to="0" class="active"
                                 aria-current="true" aria-label="Slide 1"></button>
                             <button type="button" data-bs-target="#item3" data-bs-slide-to="1"
                                 aria-label="Slide 2"></button>
                             <button type="button" data-bs-target="#item3" data-bs-slide-to="2"
                                 aria-label="Slide 3"></button>
-                        </div>
+                        </div> -->
                         <div class="carousel-inner">
                             <div class="carousel-item active" data-bs-interval="10000">
                                 <img src="./images/VIP-CARD.png" class="d-block w-100" alt="...">
@@ -230,9 +235,9 @@
                 <div class="click-btn d-flex flex-column align-items-center pb-5">
                     <h3 class="py-2">Xem trước mCards của bạn</h3>
                     <div class="list_type_card d-flex justify-content-center">
-                        <a class="btn-slider px-2 fw-bold text-dark" href="#item1">GOLD_CARDS</a>
-                        <a class="btn-slider px-2 fw-bold text-dark" href="#item2">VIP_CARDS</a>
-                        <a class="btn-slider px-2 fw-bold text-dark" href="#item3">PRIME_CARDS</a>
+                        <a class="btn-slider px-2 fw-bold text-dark" href="#item1">Premier</a>
+                        <a class="btn-slider px-2 fw-bold text-dark" href="#item2">Standard</a>
+                        <a class="btn-slider px-2 fw-bold text-dark" href="#item3">Signature</a>
                     </div>
                 </div>
             </div>
@@ -257,14 +262,7 @@
     </main>
     <footer class="footer pt-5">
         <div class="container py-4">
-            <div class="row mx-auto flex-column justify-content-center align-items-center">
-                <div class="col-4 col-md-4 w-100 text-center">
-                    <span class="text-blue-light-homepage fs-5">www.mcards.vn</span>
-                </div>
-                <div class="col-3 col-md-3 w-100">
-                    <span><img src="./images/logo_mcard _footer.png" alt="logo_mcard_footer" class="w-100 px-5"></span>
-                </div>
-            </div>
+            <img src="./images/logo_mcard _footer.png" alt="logo_mcard_footer" class="w-100">
         </div>
     </footer>
     <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">

@@ -95,6 +95,7 @@ nav.navbar .navbar_page_body{
 }
 .circle_contact .col-8.col-md-8 {
   overflow: hidden;
+  margin-top: -5px;
 }
 /* .circle_contact .image-override {
   position: relative;
