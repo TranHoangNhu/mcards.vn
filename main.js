@@ -20,6 +20,18 @@ function backToTop() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+// breakPoint laptop
+var wL = window.matchMedia("(min-width: 992px)");
+if (wL.matches) {
+  $(".container-fluid").removeClass("container-fluid").addClass("container");
+}
+// breakPoint mobile
+var wM = window.matchMedia("(max-width: 576px)");
+if (wM.matches) {
+  $(".container-fluid").removeClass("container-fluid");
+  $(".navbar_page_toggle").removeClass("d-none");
+  $(".nav-link-large").addClass("d-none");
+}
 //slider show list card & active blue color btn when clicked
 $(document).ready(function () {
   $(".btn-slider").on("click", function () {
@@ -50,16 +62,4 @@ $(document).ready(function () {
       $(".navbar_body #toggle_customer").addClass("d-none");
     } else $(".navbar_body #toggle_page").addClass("d-none");
   });
-  // breakPoint laptop
-  var WidthPC = window.matchMedia("(min-width: 992px)");
-  if (WidthPC.matches) {
-    $(".container-fluid").removeClass("container-fluid").addClass("container");
-  }
-  // breakPoint mobile
-  var WidthPC = window.matchMedia("(max-width: 576px)");
-  if (WidthPC.matches) {
-    $(".container-fluid").removeClass("container-fluid");
-    $(".navbar_page_toggle").removeClass("d-none");
-    $(".nav-link-large").addClass("d-none");
-  }
 });
