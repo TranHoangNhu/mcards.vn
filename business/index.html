@@ -114,6 +114,19 @@
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
     </script>
   <script>
+    var widthPC = window.matchMedia("(min-width: 992px)");
+    if (widthPC.matches) {
+      $(".container-fluid").removeClass("container-fluid").addClass("container");
+    }
+    // breakPoint mobile
+    var widthMobile = window.matchMedia("(max-width: 576px)");
+    if (widthMobile.matches) {
+      $(".container-fluid").removeClass("container-fluid");
+      $(".navbar_page_toggle").removeClass("d-none");
+      $(".nav-link-large").addClass("d-none");
+    }
+  </script>
+  <script>
     $(document).ready(function () {
       $("#toggle_page, #toggle_customer").on("click", function () {
         var idParam = $(this).attr("id");
@@ -125,17 +138,6 @@
           $(".navbar_body #toggle_customer").addClass("d-none");
         } else $(".navbar_body #toggle_page").addClass("d-none");
       });
-      var WidthPC = window.matchMedia("(min-width: 992px)");
-      if (WidthPC.matches) {
-        $(".container-fluid").removeClass("container-fluid").addClass("container");
-      }
-      // breakPoint mobile
-      var WidthPC = window.matchMedia("(max-width: 576px)");
-      if (WidthPC.matches) {
-        $(".container-fluid").removeClass("container-fluid");
-        $(".navbar_page_toggle").removeClass("d-none");
-        $(".nav-link-large").addClass("d-none");
-      }
     });
   </script>
 </body>
